@@ -7,8 +7,8 @@ public class Global {
    * 禁止外部新建Global对象
    */
    private Global(){};
-   private Global global = null;
-   public Global getInstance(){
+   private static Global global = null;
+   public static Global  getInstance(){
 	   if(global==null)
 		   global = new Global();
 	   return global;
